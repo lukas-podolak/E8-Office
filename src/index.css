@@ -1,0 +1,21 @@
+.e8let {
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.e8let:hover {
+    color: #FF9B00;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    color: rgb(133, 133, 133);
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+}
