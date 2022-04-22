@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/E8-Office/static/css/main.cc4228c5.css",
-    "main.js": "/E8-Office/static/js/main.37efd835.js",
+    "main.css": "/E8-Office/static/css/main.62d22f67.css",
+    "main.js": "/E8-Office/static/js/main.62db5e66.js",
     "index.html": "/E8-Office/index.html",
-    "main.cc4228c5.css.map": "/E8-Office/static/css/main.cc4228c5.css.map",
-    "main.37efd835.js.map": "/E8-Office/static/js/main.37efd835.js.map"
+    "main.62d22f67.css.map": "/E8-Office/static/css/main.62d22f67.css.map",
+    "main.62db5e66.js.map": "/E8-Office/static/js/main.62db5e66.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc4228c5.css",
-    "static/js/main.37efd835.js"
+    "static/css/main.62d22f67.css",
+    "static/js/main.62db5e66.js"
   ]
 }
