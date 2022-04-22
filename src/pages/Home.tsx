@@ -56,7 +56,7 @@ class Home extends Component<IHomeProps, IHomeState> {
                                     <tr key={key}>
                                         <td>{row.startNum}</td>
                                         <td>{row.name}</td>
-                                        <td>{moment(row.date, "DD/MM/YYYY").format("DD. MM. YYYY").toString()}</td>
+                                        <td>{moment(row.date, "DD/MM/YYYY").format("YYYY").toString()}</td>
                                         <td>{row.team}</td>
                                         <td>{row.time}</td>
                                     </tr>
@@ -85,7 +85,7 @@ class Home extends Component<IHomeProps, IHomeState> {
                                     <tr key={key}>
                                         <td>{row.startNum}</td>
                                         <td>{row.name}</td>
-                                        <td>{moment(row.date, "DD/MM/YYYY").format("DD. MM. YYYY").toString()}</td>
+                                        <td>{moment(row.date, "DD/MM/YYYY").format("YYYY").toString()}</td>
                                         <td>{row.team}</td>
                                         <td>{row.time}</td>
                                     </tr>
@@ -116,7 +116,7 @@ class Home extends Component<IHomeProps, IHomeState> {
                                     <tr key={key}>
                                         <td>{row.startNum}</td>
                                         <td>{row.name}</td>
-                                        <td>{moment(row.date, "DD/MM/YYYY").format("DD. MM. YYYY").toString()}</td>
+                                        <td>{moment(row.date, "DD/MM/YYYY").format("YYYY").toString()}</td>
                                         <td>{row.team}</td>
                                         <td>{row.time}</td>
                                     </tr>
@@ -145,7 +145,7 @@ class Home extends Component<IHomeProps, IHomeState> {
                                     <tr key={key}>
                                         <td>{row.startNum}</td>
                                         <td>{row.name}</td>
-                                        <td>{moment(row.date, "DD/MM/YYYY").format("DD. MM. YYYY").toString()}</td>
+                                        <td>{moment(row.date, "DD/MM/YYYY").format("YYYY").toString()}</td>
                                         <td>{row.team}</td>
                                         <td>{row.time}</td>
                                     </tr>
