@@ -11,8 +11,13 @@ export default function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/E8-Office" element={<Home />} />
-        <Route path="/E8-Office/start_list" element={<StartList />} />
+        <Route path="/E8-Office" element={
+        <>
+          <Home />
+          <br /><br />
+          <StartList />
+        </>
+        } />
       </Routes>
       <Footer />
     </div>
