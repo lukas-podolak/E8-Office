@@ -6,7 +6,7 @@ export default function Header() {
     <div style={{ marginBottom: '20px' }}>
         <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="/E8-Office">
                     <span className='e8let'>E</span>
                     <span className='e8let'>8</span>
                     <span className='e8let'>-</span>
