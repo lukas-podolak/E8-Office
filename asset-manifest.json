@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/E8-Office/static/css/main.cc4228c5.css",
-    "main.js": "/E8-Office/static/js/main.8f2bda27.js",
+    "main.js": "/E8-Office/static/js/main.3afedbf6.js",
     "index.html": "/E8-Office/index.html",
     "main.cc4228c5.css.map": "/E8-Office/static/css/main.cc4228c5.css.map",
-    "main.8f2bda27.js.map": "/E8-Office/static/js/main.8f2bda27.js.map"
+    "main.3afedbf6.js.map": "/E8-Office/static/js/main.3afedbf6.js.map"
   },
   "entrypoints": [
     "static/css/main.cc4228c5.css",
-    "static/js/main.8f2bda27.js"
+    "static/js/main.3afedbf6.js"
   ]
 }
