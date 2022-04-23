@@ -42,7 +42,8 @@ class Home extends Component<IHomeProps, IHomeState> {
                 <Table striped bordered hover variant="dark">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>Pořadí</th>
+                            <th>SČ</th>
                             <th>Jméno</th>
                             <th>Ročník</th>
                             <th>Tým</th>
@@ -51,9 +52,10 @@ class Home extends Component<IHomeProps, IHomeState> {
                     </thead>
                     <tbody>
                         {this.state.resultsData.map((row, key) => {
-                            if (row.track === "8 km" && row.cat === "Muž" && row.time) {
+                            if (row.track === "8 km" && row.cat === "Muž" && row.time && row.time !== "DNS") {
                                 return (
                                     <tr key={key}>
+                                        <td>{row.place}</td>
                                         <td>{row.startNum}</td>
                                         <td>{row.name}</td>
                                         <td>{moment(row.date, "DD/MM/YYYY").format("YYYY").toString()}</td>
@@ -71,7 +73,8 @@ class Home extends Component<IHomeProps, IHomeState> {
                 <Table striped bordered hover variant="dark">
                     <thead>
                         <tr>
-                        <th>#</th>
+                            <th>Pořadí</th>
+                            <th>SČ</th>
                             <th>Jméno</th>
                             <th>Ročník</th>
                             <th>Tým</th>
@@ -80,9 +83,10 @@ class Home extends Component<IHomeProps, IHomeState> {
                     </thead>
                     <tbody>
                         {this.state.resultsData.map((row, key) => {
-                            if (row.track === "4 km" && row.cat === "Muž" && row.time) {
+                            if (row.track === "4 km" && row.cat === "Muž" && row.time && row.time !== "DNS") {
                                 return (
                                     <tr key={key}>
+                                        <td>{row.place}</td>
                                         <td>{row.startNum}</td>
                                         <td>{row.name}</td>
                                         <td>{moment(row.date, "DD/MM/YYYY").format("YYYY").toString()}</td>
@@ -102,7 +106,8 @@ class Home extends Component<IHomeProps, IHomeState> {
                 <Table striped bordered hover variant="dark">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>Pořadí</th>
+                            <th>SČ</th>
                             <th>Jméno</th>
                             <th>Ročník</th>
                             <th>Tým</th>
@@ -111,9 +116,10 @@ class Home extends Component<IHomeProps, IHomeState> {
                     </thead>
                     <tbody>
                         {this.state.resultsData.map((row, key) => {
-                            if (row.track === "8 km" && row.cat === "Žena" && row.time) {
+                            if (row.track === "8 km" && row.cat === "Žena" && row.time && row.time !== "DNS") {
                                 return (
                                     <tr key={key}>
+                                        <td>{row.place}</td>
                                         <td>{row.startNum}</td>
                                         <td>{row.name}</td>
                                         <td>{moment(row.date, "DD/MM/YYYY").format("YYYY").toString()}</td>
@@ -131,7 +137,8 @@ class Home extends Component<IHomeProps, IHomeState> {
                 <Table striped bordered hover variant="dark">
                     <thead>
                         <tr>
-                        <th>#</th>
+                            <th>Pořadí</th>
+                            <th>SČ</th>
                             <th>Jméno</th>
                             <th>Ročník</th>
                             <th>Tým</th>
@@ -140,9 +147,10 @@ class Home extends Component<IHomeProps, IHomeState> {
                     </thead>
                     <tbody>
                         {this.state.resultsData.map((row, key) => {
-                            if (row.track === "4 km" && row.cat === "Žena" && row.time) {
+                            if (row.track === "4 km" && row.cat === "Žena" && row.time && row.time !== "DNS") {
                                 return (
                                     <tr key={key}>
+                                        <td>{row.place}</td>
                                         <td>{row.startNum}</td>
                                         <td>{row.name}</td>
                                         <td>{moment(row.date, "DD/MM/YYYY").format("YYYY").toString()}</td>
