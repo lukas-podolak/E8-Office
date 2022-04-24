@@ -21,7 +21,7 @@ class StartList extends Component<IStartListProps, IStartListState> {
   }
 
   componentDidMount() {
-    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSy8kw0haSfwV27PHLvA5JzPXA9VSOvW3dAoavi87-IZA9Jp5BypoJSggDE9fZg9vl99RjW96Wuj2Av/pub?gid=0&single=true&output=csv", {
+    Papa.parse("", {
       download: true,
       header: true,
       complete: (results) => {
