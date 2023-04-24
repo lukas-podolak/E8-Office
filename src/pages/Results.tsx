@@ -53,81 +53,81 @@ export default class Results extends Component<IResultsProps, IResultsState> {
     public render() {
         return (
             <Container>
-            <h1 className='mb-4'>Výsledková listina</h1>
-
-            <Nav variant="tabs" defaultActiveKey={"2022"}>
-              <Nav.Item>
-                <Nav.Link eventKey="2022"><Link className='resultTabLink' to={'/results/2022'}>2022</Link></Nav.Link>
-              </Nav.Item>
-            </Nav>
-
-            <div className='resultsTab'>
-                <Nav variant="pills" className='mb-3'>
+                <h1 className='mb-4'>Výsledková listina</h1>
+            
+                <Nav variant="tabs" defaultActiveKey={"2022"}>
                     <Nav.Item>
-                        <Nav.Link eventKey="8km" onClick={() => {filterTrack = "8 km"; this.filterData();}}>8 km</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="4km" onClick={() => {filterTrack = "4 km"; this.filterData();}}>4 km</Nav.Link>
+                        <Nav.Link eventKey="2022"><Link className='resultTabLink' to={'/results/2022'}>2022</Link></Nav.Link>
                     </Nav.Item>
                 </Nav>
-                <Nav variant="pills" defaultActiveKey="cp" className='mb-3'>
-                    <Nav.Item>
-                        <Nav.Link eventKey="cp" onClick={() => {filterCategory = "cp"; this.filterData();}}>Celkové pořadí</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="male" onClick={() => {filterCategory = "male"; this.filterData();}}>Muž</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="female" onClick={() => {filterCategory = "female"; this.filterData();}}>Žena</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="mu18" onClick={() => {filterCategory = "MU18"; this.filterData();}}>MU18</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="mu39" onClick={() => {filterCategory = "MU39"; this.filterData();}}>MU39</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="mu40+" onClick={() => {filterCategory = "MU40+"; this.filterData();}}>MU40+</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="fu18" onClick={() => {filterCategory = "FU18"; this.filterData();}}>FU18</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="fu39" onClick={() => {filterCategory = "FU39"; this.filterData();}}>FU39</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="fu40+" onClick={() => {filterCategory = "FU40+"; this.filterData();}}>FU40+</Nav.Link>
-                    </Nav.Item>
-                </Nav>
-
-                <Table striped bordered hover variant="dark">
-                    <thead>
-                        <tr>
-                            <th>Pořadí</th>
-                            <th>SČ</th>
-                            <th>Jméno</th>
-                            <th>Ročník</th>
-                            <th>Tým</th>
-                            <th>Čas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {this.state.resultsData.map((row, key) => {
-                            return (
-                                <tr key={key}>
-                                    <td>{key + 1}</td>
-                                    <td>{row.startNum}</td>
-                                    <td>{row.name}</td>
-                                    <td>{moment(row.date, "MM/DD/YYYY").format("YYYY").toString()}</td>
-                                    <td>{row.team}</td>
-                                    <td>{row.time}</td>
-                                </tr>
-                            )
-                        })}
-                    </tbody>
-                </Table>
-            </div>
-          </Container>
+            
+                <div className='resultsTab'>
+                    <Nav variant="pills" className='mb-3'>
+                        <Nav.Item>
+                            <Nav.Link eventKey="8km" onClick={() => {filterTrack = "8 km"; this.filterData();}}>8 km</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="4km" onClick={() => {filterTrack = "4 km"; this.filterData();}}>4 km</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                    <Nav variant="pills" defaultActiveKey="cp" className='mb-3'>
+                        <Nav.Item>
+                            <Nav.Link eventKey="cp" onClick={() => {filterCategory = "cp"; this.filterData();}}>Celkové pořadí</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="male" onClick={() => {filterCategory = "male"; this.filterData();}}>Muž</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="female" onClick={() => {filterCategory = "female"; this.filterData();}}>Žena</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="mu18" onClick={() => {filterCategory = "MU18"; this.filterData();}}>MU18</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="mu39" onClick={() => {filterCategory = "MU39"; this.filterData();}}>MU39</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="mu40+" onClick={() => {filterCategory = "MU40+"; this.filterData();}}>MU40+</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="fu18" onClick={() => {filterCategory = "FU18"; this.filterData();}}>FU18</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="fu39" onClick={() => {filterCategory = "FU39"; this.filterData();}}>FU39</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="fu40+" onClick={() => {filterCategory = "FU40+"; this.filterData();}}>FU40+</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+            
+                    <Table striped bordered hover variant="dark">
+                        <thead>
+                            <tr>
+                                <th>Pořadí</th>
+                                <th>SČ</th>
+                                <th>Jméno</th>
+                                <th>Ročník</th>
+                                <th>Tým</th>
+                                <th>Čas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.state.resultsData.map((row, key) => {
+                                return (
+                                    <tr key={key}>
+                                        <td>{key + 1}</td>
+                                        <td>{row.startNum}</td>
+                                        <td>{row.name}</td>
+                                        <td>{moment(row.date, "MM/DD/YYYY").format("YYYY").toString()}</td>
+                                        <td>{row.team}</td>
+                                        <td>{row.time}</td>
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                    </Table>
+                </div>
+            </Container>
         )
     }
 
